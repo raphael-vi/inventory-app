@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Item</title>
+</head>
+<body>
+    <h1>Edit Item</h1>
+    <form action="/items/<%= item._id %>/edit" method="POST">
+        <input type="text" name="name" value="<%= item.name %>" required>
+        <input type="number" name="quantity" value="<%= item.quantity %>" required>
+        <input type="number" name="price" value="<%= item.price %>" required>
+        <button type="submit">Update Item</button>
+    </form>
+</body>
+</html>
